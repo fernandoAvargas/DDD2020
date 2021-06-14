@@ -1,10 +1,16 @@
-﻿using System;
+﻿
+
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace ApplicationApp.Interfaces.Generics
 {
-    interface IGenericsApp
+    public interface IGenericsApp<T> where T : class
     {
+        Task Add(T Objeto);
+        Task Update(T Objeto);
+        Task Delete(T Objeto);
+        Task<T> GetEntityById(int Id);
+        Task<List<T>> List();
     }
 }
