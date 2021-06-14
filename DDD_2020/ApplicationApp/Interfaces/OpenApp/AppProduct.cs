@@ -1,4 +1,5 @@
-﻿using Entities.Entities;
+﻿using Domain.Interfaces.InterfaceProducts;
+using Entities.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,29 +9,35 @@ namespace ApplicationApp.Interfaces.OpenApp
 {
     public class AppProduct : IProductApp
     {
-        public Task Add(Product Objeto)
+        IProduct _Iproduct;
+        public AppProduct(IProduct IProduct)
         {
-            throw new NotImplementedException();
+            _Iproduct = IProduct;
         }
 
-        public Task Delete(Product Objeto)
+        public async Task Add(Product Objeto)
         {
-            throw new NotImplementedException();
+            await _Iproduct.Add(Objeto);
         }
 
-        public Task<Product> GetEntityById(int Id)
+        public async Task Delete(Product Objeto)
         {
-            throw new NotImplementedException();
+            await _Iproduct.Delete(Objeto);
         }
 
-        public Task<List<Product>> List()
+        public async Task<Product> GetEntityById(int Id)
         {
-            throw new NotImplementedException();
+            return await _Iproduct.GetEntityById(Id);
         }
 
-        public Task Update(Product Objeto)
+        public async Task<List<Product>> List()
         {
-            throw new NotImplementedException();
+            return await _Iproduct.List();
+        }
+
+        public async Task Update(Product Objeto)
+        {
+            await _Iproduct.Update(Objeto);
         }
     }
 }
