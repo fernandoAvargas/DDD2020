@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infraestructure", "Infra\Infraestructure.csproj", "{F37984AA-DC3D-40AE-9222-15CB4F9F0B75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationApp", "ApplicationApp\ApplicationApp.csproj", "{4D253DA9-F839-4899-B6B9-E2765B4B58AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationApp", "ApplicationApp\ApplicationApp.csproj", "{4D253DA9-F839-4899-B6B9-E2765B4B58AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_DDD_2020", "Web_DDD_2020\Web_DDD_2020.csproj", "{2ECD97E0-E1F5-4405-B333-AE7928F8FD26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{4D253DA9-F839-4899-B6B9-E2765B4B58AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D253DA9-F839-4899-B6B9-E2765B4B58AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D253DA9-F839-4899-B6B9-E2765B4B58AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECD97E0-E1F5-4405-B333-AE7928F8FD26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECD97E0-E1F5-4405-B333-AE7928F8FD26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECD97E0-E1F5-4405-B333-AE7928F8FD26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECD97E0-E1F5-4405-B333-AE7928F8FD26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{B9687831-B835-415A-B2E3-F8213DC461FD} = {8CC1E247-FD7F-4A8C-B837-E01912769772}
 		{F37984AA-DC3D-40AE-9222-15CB4F9F0B75} = {25166FBB-E3BB-4D04-8132-18EC1CE73597}
 		{4D253DA9-F839-4899-B6B9-E2765B4B58AC} = {68A1D408-0B36-46CE-A80B-959F2379B72A}
+		{2ECD97E0-E1F5-4405-B333-AE7928F8FD26} = {B02A371C-F6B3-4F6E-A1A6-74ABD3A58FB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DAD89C1-D5FC-47DC-BC48-C55186F91F82}
